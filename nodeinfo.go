@@ -16,6 +16,7 @@ const (
 )
 
 type Config struct {
+	BaseURL   string
 	InfoURL   string
 	Metadata  Metadata
 	Protocols []NodeProtocol

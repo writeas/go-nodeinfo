@@ -14,7 +14,7 @@ type Service struct {
 
 func NewService(cfg Config, r Resolver) *Service {
 	return &Service{
-		InfoURL: cfg.InfoURL,
+		InfoURL: cfg.BaseURL + cfg.InfoURL,
 		Info: NodeInfo{
 			Metadata:  cfg.Metadata,
 			Protocols: cfg.Protocols,
