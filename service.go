@@ -24,3 +24,11 @@ func NewService(cfg Config, r Resolver) *Service {
 		resolver: r,
 	}
 }
+
+func (s Service) BuildInfo() NodeInfo {
+	ni := s.Info
+	ni.OpenRegistrations, _ = s.resolver.IsOpenRegistration()
+	ni.Usage, _ = s.resolver.Usage()
+	ni.Version = profileVer
+	return ni
+}
