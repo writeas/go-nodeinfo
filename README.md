@@ -7,7 +7,7 @@ go-nodeinfo is an implementation of [NodeInfo](https://github.com/jhass/nodeinfo
 
 ## Usage
 
-`nodeinfo.Service` integrates with your exiting `net/http` server.
+`nodeinfo.Service` integrates with your existing `net/http` server.
 
 ```go
 package main
