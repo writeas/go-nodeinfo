@@ -8,7 +8,15 @@ type (
 const (
 	// Protocols that can be supported by this node.
 	ProtocolActivityPub NodeProtocol = "activitypub"
+	ProtocolBuddyCloud               = "buddycloud"
+	ProtocolDFRN                     = "dfrn"
+	ProtocolDisaspora                = "diaspora"
+	ProtocolLibertree                = "libertree"
 	ProtocolOStatus                  = "ostatus"
+	ProtocolPumpIO                   = "pumpio"
+	ProtocolTent                     = "tent"
+	ProtocolXMPP                     = "xmpp"
+	ProtocolZot                      = "zot"
 
 	// Services that can be supported (inbound or outbound) by this node's API.
 	ServiceTwitter NodeService = "twitter"
