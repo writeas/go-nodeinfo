@@ -49,9 +49,10 @@ type (
 	// From the spec: Free form key value pairs for software specific values.
 	// Clients should not rely on any specific key present.
 	Metadata struct {
-		NodeName        string `json:"nodeName,omitempty"`
-		NodeDescription string `json:"nodeDescription,omitempty"`
-		Private         bool   `json:"private,omitempty"`
+		NodeName        string       `json:"nodeName,omitempty"`
+		NodeDescription string       `json:"nodeDescription,omitempty"`
+		Private         bool         `json:"private,omitempty"`
+		Software        SoftwareMeta `json:"software,omitempty"`
 	}
 
 	Services struct {
@@ -64,6 +65,12 @@ type (
 		Name string `json:"name"`
 		// Version of this server software.
 		Version string `json:"version"`
+	}
+
+	SoftwareMeta struct {
+		HomePage string `json:"homepage"`
+		GitHub   string `json:"github"`
+		Follow   string `json:"follow"`
 	}
 
 	// Usage is usage statistics for this server.
