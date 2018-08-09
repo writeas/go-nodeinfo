@@ -19,8 +19,15 @@ const (
 	ProtocolZot                      = "zot"
 
 	// Services that can be supported (inbound or outbound) by this node's API.
-	ServiceTwitter NodeService = "twitter"
-	ServiceTumblr              = "tumblr"
+	ServiceAtom      NodeService = "atom1.0"
+	ServiceGNUSocial             = "gnusocial"
+	ServiceIMAP                  = "imap"
+	ServicePnut                  = "pnut"
+	ServicePOP3                  = "pop3"
+	ServicePumpIO                = "pumpio"
+	ServiceRSS                   = "rss2.0"
+	ServiceTwitter               = "twitter"
+	ServiceTumblr                = "tumblr"
 )
 
 type Config struct {
